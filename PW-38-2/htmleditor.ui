@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HTMLEditor</class>
+ <widget class="QMainWindow" name="HTMLEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HTMLEditor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPlainTextEdit" name="htmlEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="plainText">
+         <string>&lt;html&gt;
+ &lt;head&gt;
+   &lt;meta charset=&quot;utf-8&quot;&gt;
+     &lt;title&gt;Hello skillbox&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;h1&gt; hello, wysiwyg editor!&lt;/h1&gt;
+&lt;img src=&quot;https://248006.selcdn.ru/MainSite/skillbox.svg&quot; alt=&quot;skillbox logo.&quot;&gt;
+
+&lt;p&gt;Text example&lt;/p&gt;
+
+&lt;ui&gt;&lt;!-- changed to list in the tutorial --&gt;
+  &lt;li&gt;param 1&lt;/li&gt;
+  &lt;li&gt;param 2&lt;/li&gt;
+  &lt;li&gt;param 3&lt;/li&gt;
+&lt;/ui&gt;
+
+  &lt;p&gt;Актуальные знания от признанных экспертов рынка для новичков и практикующих специалистов &lt;/p&gt;
+
+  &lt;p&gt;На &lt;a href=&quot;http://skillbox.ru&quot;&gt;платформе&lt;/a&gt; Можно получить знания по актуальным темам и восстребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой &lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWebEngineView" name="htmlDisplay" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header>QWebEngineView</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

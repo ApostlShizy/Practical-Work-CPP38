@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/sourceFiles">
+        <file>mp3/Voicy.mp3</file>
+        <file>png/SetDown.png</file>
+        <file>png/SETUP.png</file>
+    </qresource>
+</RCC>
