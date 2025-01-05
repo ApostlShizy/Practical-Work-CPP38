@@ -13,12 +13,21 @@
   <property name="windowTitle">
    <string>BlurMaker</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(68, 68, 68)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QLabel" name="displayPick">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255)</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -33,6 +42,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="openFileButton">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 170, 0)</string>
+        </property>
         <property name="text">
          <string>Open File</string>
         </property>

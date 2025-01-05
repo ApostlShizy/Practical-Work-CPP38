@@ -21,20 +21,25 @@ BlurMaker::BlurMaker(QWidget *parent) : QMainWindow(parent), ui(new Ui::BlurMake
 
 void BlurMaker::openFileFun()
 {
-    picPath = QFileDialog::getOpenFileName(
+    auto tempPath = QFileDialog::getOpenFileName(
         nullptr,
         "Open pick",
         "C:/",
         "pick files (*.jpg , *.png)");
-    currentPick = QPixmap(picPath);
-    y = ui->displayPick->height();
-    x = ui->displayPick->width();
-    ui->displayPick->setPixmap(currentPick.scaled(x,y,Qt::KeepAspectRatio));
+
+    if(!tempPath.isEmpty())
+    {
+        picPath = tempPath;
+        currentPick = QPixmap(picPath);
+        y = ui->displayPick->height();
+        x = ui->displayPick->width();
+        ui->displayPick->setPixmap(currentPick.scaled(x,y,Qt::KeepAspectRatio));
+    }
 }
 
 void BlurMaker::addBlur(int value)
 {
-    if(!currentPick.isNull())
+    if(!picPath.isEmpty())
     {
         QImage bluredPick(picPath);
         QGraphicsScene scene;
