@@ -21,10 +21,10 @@ public slots:
 public:
     BlurMaker(QWidget *parent = nullptr);
 private:
-    QPixmap currentPick;
-    QString picPath = "";
-    int x = 600;
-    int y = 300;
+    QPixmap currentPic;
+    QString picPath;
+    int x;
+    int y;
     Ui::BlurMaker *ui;
 };
 #endif // BLURMAKER_H
